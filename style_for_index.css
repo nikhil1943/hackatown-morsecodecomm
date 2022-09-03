@@ -19,7 +19,7 @@ body{
 .wrapper{
     background: #fff;
     width: 450px;
-    height: 48rem;
+    height: 50rem;
     border-radius: 16px 0px 0px 16px;
     box-shadow: 0 32px 64px -48px rgba(0,0,0,0.5);
     z-index: 3;
@@ -295,6 +295,10 @@ body{
     border-radius: 1rem;
 }
 
+
+.other_image{
+    margin-top: 2rem;
+}
 
 
 
