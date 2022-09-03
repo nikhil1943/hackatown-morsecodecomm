@@ -51,7 +51,10 @@ function decodeMorse(morseCode) {
 }
 
 transButton = document.getElementById("translate-button");
+textBoxes = document.querySelectorAll(".text_bubble");
 
 transButton.addEventListener("click", (e)=>{
-    morseIn.value = decodeMorse(morseIn.value);
+  textBoxes.forEach(a => {
+    a.textContent = decodeMorse(a.textContent)
+  })
 })
