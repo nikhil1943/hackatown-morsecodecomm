@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Amsterdam";
+    src: url("./src/font/Amsterdam.ttf");
+}
+@font-face {
+    font-family: "Berlin_Sans_FB";
+    src: url("./src/font/Berlin_Sans_FB.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container_main{
+    background-color: #6159E5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 4rem;
+    height: 100vh;
+}
+
+.login_text{
+    font-family: 'Berlin_Sans_FB', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    color: #6159E5; 
+}
+
+.login_card{
+    background-color: #ffff;
+    width: 20vw;
+    height: 36vh;
+    padding: 2rem;
+    padding-top: 8rem;
+    margin: 26vh;
+    border: 20px solid white;
+    border-radius: 2rem;
+}
+
+.login_from{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.input_field{
+    margin: 1rem 0rem;
+    padding: 0.1rem .6rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #707070;
+    height: 1.8rem;
+    color: #707070;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+#button_settings{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+}
+#signup_text_setting{
+    display: flex;
+    justify-content: center;
+    color: #707070;
+}
+
+#signup_text_small{
+    color: #6159E5;
+}
+
+
+.login_submit_btn{
+    border-radius: 2rem;
+    border: none;
+    padding:0.6rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    background-color: #6159E5;
+    color: white;
+}
+
+.Main_text{
+    font-family: 'Amsterdam';
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 10rem;
+}
+
+.container_left{
+    display: flex;
+    justify-content: center;
+    justify-content: right;
+}
+
+a{
+    text-decoration: none;
+    color: #6159E5;
+}

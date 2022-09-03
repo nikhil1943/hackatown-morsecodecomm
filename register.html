@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/login_register.css">
+</head>
+<body>
+    <div class="container_main">
+        <div class="container_left">
+            <img src="/src/img/main.svg" alt="Morse Code">
+            <span class="Main_text">&nbspMorse Code&nbsp</span>
+        </div>  <!-- Image Here -->
+        <div class="container_right">
+            <div class="login_card">
+                <span class="login_text">Register</span>
+                <form class="login_from" action="#" method="post">
+                    <input class="input_field" type="text" name="user_email" placeholder="Email...">
+                    <input class="input_field" type="password" name="user_password" placeholder="Password">
+                    <input class="input_field" type="password" name="user_confirm_password" placeholder="Confirm Password...">
+                    <input class="input_field" type="text" name="user_fname" placeholder="Full Name...">
+                    <div id="button_settings" >
+                        <button class="login_submit_btn">Sign Up</button>
+                    </div>
+                    <style>
+                        .login_card{
+                            width: 20vw;
+                            height: 46vh;
+                            margin: 20vh;
+                        }
+                    </style>
+                    <div id="signup_text_setting">
+                        <span class="login_text_bottom">
+                            Already have an account? &nbsp<a href="./login.html"><span id="signup_text_small">Log In.</span></a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+        </div> <!-- Form Here -->
+    </div>
+</body>
+</html>
