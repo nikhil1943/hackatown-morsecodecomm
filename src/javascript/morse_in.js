@@ -33,14 +33,14 @@ clrButton.addEventListener("click",(e)=>{
     morseIn.value = morseString;
 })
 
-document.addEventListener('keydown', (event) => {
-    if (event.key == " ") {
-        if(event.repeat) {
-            morseString += "-"
-            morseIn.value = morseString;
-        } else {
-            morseString += "."
-            morseIn.value = morseString;
-        }
-    }
-});
+// document.addEventListener('keydown', (event) => {
+//     if (event.key == " ") {
+//         if(event.repeat) {
+//             morseString += "-"
+//             morseIn.value = morseString;
+//         } else {
+//             morseString += "."
+//             morseIn.value = morseString;
+//         }
+//     }
+// });
