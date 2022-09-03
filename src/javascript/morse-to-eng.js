@@ -50,6 +50,8 @@ function decodeMorse(morseCode) {
       .trim() ;
 }
 
-sendButton.addEventListener("click", (e)=>{
+transButton = document.getElementById("translate-button");
+
+transButton.addEventListener("click", (e)=>{
     morseIn.value = decodeMorse(morseIn.value);
 })

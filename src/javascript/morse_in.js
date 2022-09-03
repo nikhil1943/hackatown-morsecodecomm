@@ -1,23 +1,23 @@
 var clrButton = document.getElementById("clear-button");
 var morseButton = document.getElementById("morse-button");
-var sendButton = document.getElementById("send-button");
+var tansButton = document.getElementById("translate-button");
 var morseIn = document.getElementById("morse-input");
 
 var morseString=""; // morse code input is stored here
 
-const CODE_DELAY = 5000; // time period in which spaces are added (in miliseconds)
+const CODE_DELAY = 4000; // time period in which spaces are added (in miliseconds)
 
 document.addEventListener('contextmenu', e => e.preventDefault()); // disable right click
 
-// adding "dots" on simple clicks 
-morseButton.addEventListener("click", (event) =>{
-    morseString += ".";
+// adding "dashes" on long press, long-press module
+morseButton.addEventListener("long-press",(event)=>{
+    morseString = morseString.slice(0,-1) + "-";
     morseIn.value = morseString;
 })
 
-// adding "dashes" on long press, long-press module
-morseButton.addEventListener("long-press",(event)=>{
-    morseString += "-";
+// adding "dots" on simple clicks 
+morseButton.addEventListener("mousedown", (event) =>{
+    morseString += ".";
     morseIn.value = morseString;
 })
 

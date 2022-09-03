@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatile" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>morse code</title>
+
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
@@ -21,7 +22,7 @@
                     <span>User ID: XXXX</span>
                     <br>
                     <span>Sending ID: XXXX</span>
-                    <form method="post"><button class="clear-btn translate-btn" >Translate</button></form>
+                    <form><button class="clear-btn translate-btn" id="translate-button">Translate</button></form>
                     </div>
             </header>
             <div class="chat-box" id="chat-box-fix">
@@ -50,13 +51,14 @@
                 <script src="./src/javascript/chat_scrollbar_fix.js"></script>
             </div>
             <form action="#" class="typing-area">
-                <input type="text" placeholder="message...">
-                <button>
+                <input type="text" id="morse-input" placeholder="message...">
+                <button >
                     <i class="fab fa-telegram-plane"></i>
                 </button>
-                <button class="rec-btn">Rec</button>
-                <button class="clear-btn" >Clear</button>
+                <button data-long-press-delay="750" class="rec-btn" id="morse-button"></button>
+                <button class="clear-btn" id="clear-button">Clear</button>
             </form>
+            <!-- long press module -->
         </section>
     </div>
     <div class="wrapper wrapper-x">
@@ -64,5 +66,8 @@
             <img class="other_image" src="./morse_code_index.png" alt="">
         </section>
     </div>
+    <script src="./src/modules/long-press-event.min.js"></script>
+    <script src="./src/javascript/morse_in.js"></script>
+    <script src="./src/javascript/morse-to-eng.js"></script>
 </body>
 </html>
