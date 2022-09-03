@@ -14,6 +14,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #6159E5;
+    overflow: hidden;
 }
 
 .wrapper{
@@ -259,7 +260,7 @@ body{
     outline: none;
 }
 
-.typing-area button{
+.typing-area > button{
     margin: 0rem 0.4rem;
     width: 8rem;
     border: none;
@@ -300,8 +301,11 @@ body{
     margin-top: 2rem;
 }
 
+.typing-area .rec-btn,.typing-area .clear-btn{
+    background-color: white;
+    color: #6159E5;
+}
 
-
-
-
-
+.details > .translate-btn{
+    margin-top: 0.4rem;
+}
