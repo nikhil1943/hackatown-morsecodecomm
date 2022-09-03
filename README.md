@@ -1,2 +1,2 @@
 # hackatown-morsecodecomm
-morse code communicator using python
+morse code communicator using javascript and php
