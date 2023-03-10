@@ -1,2 +1,2 @@
 # hackatown-morsecodecomm
-morse code communicator using javascript and php
+morse code communicator using html, css and vanilla js
